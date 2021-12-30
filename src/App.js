@@ -2,7 +2,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className='container mx-auto'>
       check the roster of all the Spanish teams and, for each player, his nationality, position and age
     </div>
   );

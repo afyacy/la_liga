@@ -1,9 +1,11 @@
 import './App.css';
-
+import Header from './components/header';
+import Teams from './components/teams';
 function App() {
   return (
     <div className='container mx-auto'>
-      check the roster of all the Spanish teams and, for each player, his nationality, position and age
+      <Header />
+      <Teams />
     </div>
   );
 }

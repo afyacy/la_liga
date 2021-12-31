@@ -1,6 +1,7 @@
 // Display teams
-import React, { Component } from 'react';
-import axios from 'axios';
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 export default class Teams extends Component {
   state = {
@@ -16,16 +17,17 @@ export default class Teams extends Component {
     .then(res => {
         const teams = res.data.teams;
         this.setState({ teams });
-    });
+    })
   }
 
   render() {
-    console.log(this.teams)
     return (
       <div>
         { 
           this.state.teams.map(team => 
-          <li key={team.id}>{team.name}</li>
+          <li key={team.id}>
+            <Link to={`/team/${team.id}`}>{team.name}</Link>
+          </li>
         )}
       </div>
     )

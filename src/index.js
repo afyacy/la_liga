@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Teams from './components/teams'
-import Team from './components/team'
+import Teams from './components/Teams'
+import Team from './components/Team'
 import App from './App'
 
 ReactDOM.render(

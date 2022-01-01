@@ -1,4 +1,4 @@
-// Display players
+// Display players in a team
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
@@ -6,19 +6,19 @@ import axios from 'axios'
 export default function Team() {
   const {id} = useParams()
   const [players, setPlayers] = useState()
-  const [team, SetTeam] = useState()
+  const [team, setTeam] = useState()
 
   useEffect(() => {
-    axios.get(`https://api.football-data.org/v2/teams/${id}`, {
+    axios.get(`${process.env.REACT_APP_API_BASE_URL}teams/${id}`, {
       headers: {
-        "X-Auth-Token": '5f3ece105a1142af826ed06aa1872c0c'
+        "X-Auth-Token": `${process.env.REACT_APP_API_TOKEN}`
       }
     })
     .then(res => {
-      SetTeam(res.name)
+      setTeam(res.name)
       setPlayers(res.data.squad);
     })
-  }, [])
+  }, [id])
 
   const calculate_age = dob => {
     const birthDate = new Date(dob); 

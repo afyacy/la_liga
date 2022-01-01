@@ -4,10 +4,12 @@ import Header from './components/Header'
 
 function App() {
   return (
-    <>
+    <div className='backgroundImage'>
       <Header />
-      <Outlet />
-    </>
+      <div className='w-7/12 bg-white flex m-auto px-8 relative rounded middleContent'>
+         <Outlet />
+      </div>
+    </div>
   );
 }
 

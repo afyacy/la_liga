@@ -1,3 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('http://fonts.cdnfonts.com/css/avenir-lt-std');
+
+body {
+  background-color: #f4f4f4;
+}
+.backgroundImage {
+  background-image: url("../public/liga-background@3x.png");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+} 
+
+.middleContent {
+  top: 425px;
+}

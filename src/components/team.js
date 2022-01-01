@@ -4,9 +4,10 @@ import { useParams } from 'react-router-dom'
 import axios from 'axios'
 
 export default function Team() {
+  // Assign states and constants
   const {id} = useParams()
-  const [players, setPlayers] = useState()
-  const [team, setTeam] = useState()
+  const [squad, setSquad] = useState()
+  const [name, setName] = useState()
 
   useEffect(() => {
     axios.get(`${process.env.REACT_APP_API_BASE_URL}teams/${id}`, {
@@ -15,25 +16,24 @@ export default function Team() {
       }
     })
     .then(res => {
-      setTeam(res.name)
-      setPlayers(res.data.squad);
+      setName(res.name)
+      setSquad(res.data.squad);
     })
   }, [id])
 
-  const calculate_age = dob => {
-    const birthDate = new Date(dob); 
+  const calculateAge = dateOfBirth => {
+    const birthDate = new Date(dateOfBirth); 
     const difference = Date.now() - birthDate.getTime();
     const age = new Date(difference);
-  
     return Math.abs(age.getUTCFullYear() - 1970);
   }
 
-  if (!players) {
-    return <p>Loading</p>
+  if (!squad) {
+    return <p className="m-auto">Loading</p>
   } else {
     return (
       <div>
-        <h1>{team}</h1>
+        <h1>{name}</h1>
       <table>
         <thead>
           <tr>
@@ -44,12 +44,12 @@ export default function Team() {
           </tr>
         </thead>
         <tbody>
-          {players.map(player =>
+          {squad.map(player =>
             <tr key={player.id}>
               <td>{player.name}</td>
               <td>{player.nationality}</td>
               <td>{player.position}</td>
-              <td>{calculate_age(player.dateOfBirth)}</td>
+              <td>{calculateAge(player.dateOfBirth)}</td>
             </tr>
           )}
         </tbody>

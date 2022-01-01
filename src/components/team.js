@@ -18,7 +18,7 @@ export default function Team() {
       SetTeam(res.name)
       setPlayers(res.data.squad);
     })
-  }, [])
+  }, [id])
 
   const calculate_age = dob => {
     const birthDate = new Date(dob); 

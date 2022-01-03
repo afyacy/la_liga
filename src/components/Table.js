@@ -49,14 +49,14 @@ export default function Table({data}) {
     <>
     <table className="w-full text-left font-avenir">
       <thead>
-        <tr className="text-gray-300">
+        <tr className="text-gray-300 uppercase">
           <th className="flex py-6 font-thin">
             Name
-            <button className="fill-gray-400" onClick={() => setSortType('2')}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 24 24"><path d="M19.707 14.707A1 1 0 0 0 19 13h-7v2h4.586l-4.293 4.293A1 1 0 0 0 13 21h7v-2h-4.586l4.293-4.293zM7 3.99H5v12H2l4 4 4-4H7zM17 3h-2c-.417 0-.79.259-.937.649l-2.75 7.333h2.137L14.193 9h3.613l.743 1.981h2.137l-2.75-7.333A1 1 0 0 0 17 3zm-2.057 4 .75-2h.613l.75 2h-2.113z"></path></svg>
+            <button className="px-1" onClick={() => setSortType('2')}>
+              <img src="https://i.postimg.cc/18XMBq9g/increasing-symbol-3x.png" alt="asc" className="h-2.5"/>
             </button>
             <button className="fill-gray-400" onClick={() => setSortType('1')}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 24 24"><path d="M19.707 14.707A1 1 0 0 0 19 13h-7v2h4.586l-4.293 4.293A1 1 0 0 0 13 21h7v-2h-4.586l4.293-4.293zM7 3.99H5v12H2l4 4 4-4H7zM17 3h-2c-.417 0-.79.259-.937.649l-2.75 7.333h2.137L14.193 9h3.613l.743 1.981h2.137l-2.75-7.333A1 1 0 0 0 17 3zm-2.057 4 .75-2h.613l.75 2h-2.113z"></path></svg>
+              <img src="https://i.postimg.cc/KRG4d73Y/decreasing-symbol-3x.png" alt="desc" className="h-2.5"/>
             </button>
           </th>
           <th className="font-thin">Nationality</th>

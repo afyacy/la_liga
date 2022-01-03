@@ -4,7 +4,7 @@ body {
   background-color: #f4f4f4;
 }
 .backgroundImage {
-  background-image: url("../public/liga-background@3x.png");
+  background-image: url("../public/images/liga-background@3x.png");
   background-size: cover;
   width: 100vw;
   height: 100vh;

@@ -19,6 +19,7 @@ export default function Table({ data }) {
     let sortOrder = 1;
     if (property[0] === '-') {
       sortOrder = -1;
+      // eslint-disable-next-line no-param-reassign
       property = property.substr(1);
     }
 

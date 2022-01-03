@@ -2,6 +2,7 @@
 
 ## Getting started
 You can view a live demo over at https://la-liga-psi.vercel.app/
+Watch a demo via https://www.loom.com/share/a8ba7bfa40a440148354dbda3d9328fc/ 
 
 ## To get the frontend running locally:
 

@@ -6,7 +6,7 @@ function App() {
   return (
     <div className='backgroundImage'>
       <Header />
-      <div className='w-7/12 bg-white flex m-auto px-8 relative rounded middleContent'>
+      <div className='w-7/12 bg-white flex m-auto px-8 relative pt-8 rounded middleContent'>
          <Outlet />
       </div>
     </div>

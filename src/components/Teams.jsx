@@ -9,7 +9,7 @@ export default function Teams() {
 
   // Get teams from API
   useEffect(() => {
-    axios.get(`${process.env.REACT_APP_API_BASE_URL}teams`, {
+    axios.get(`${process.env.REACT_APP_API_BASE_URL}competitions/2014/teams`, {
       headers: {
         'X-Auth-Token': `${process.env.REACT_APP_API_TOKEN}`,
       },

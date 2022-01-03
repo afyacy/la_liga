@@ -52,7 +52,7 @@ export default function Table({ data }) {
 
   return (
     <>
-      <table className="w-full text-left font-avenir">
+      <table className="w-full text-left font-avenir text-xs sm:text-lg">
         <thead>
           <tr className="text-gray-300 uppercase">
             <th className="flex py-6 font-thin">

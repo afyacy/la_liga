@@ -26,8 +26,8 @@ export default function Teams() {
   // Display teams
   return (
     <div className="mb-10 font-avenir text-liga-gray">
-      <h2 className="font-bold text-xl text-center py-4">Select a team to see its roster</h2>
-      <div className="grid grid-cols-4 gap-4 font-semibold">
+      <h2 className="font-bold sm:text-xl text-center py-4">Select a team to see its roster</h2>
+      <div className="grid sm:grid-cols-4 sm:gap-4 font-semibold">
         {
           teams.map((team) => (
             <div

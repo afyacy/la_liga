@@ -68,7 +68,7 @@ export default function Team() {
             }}
           />
         </label>
-        <h1 className="py-4 px-40 font-avenir font-bold text-liga-gray text-xl">{name}</h1>
+        <h1 className="py-4 px-2 sm:px-40 font-avenir font-bold text-liga-gray sm:text-xl">{name}</h1>
       </div>
       {query.length > 1 ? (
         <Table

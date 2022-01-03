@@ -1,4 +1,4 @@
-# Check the roster of all the Spanish teams and, for each player, his nationality, position and age
+## Check the list of all teams in Spanish First Division League and, within each team, all the players playing in it.
 
 ## Getting started
 You can view a live demo over at https://la-liga-psi.vercel.app/

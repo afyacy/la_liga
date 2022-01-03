@@ -66,9 +66,9 @@ export default function Team() {
             data={squad}
           />
         )}
-        <button className="flex m-auto text-gray-400 pb-6">SEE MORE</button>
+        
       </div>
     )
   }
-  
+   
 }
